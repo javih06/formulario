@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cita para donacion de sangre</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #8d7777;
+margin: 0;
+padding: 0;
+}
+
+form{
+width: 50%;
+margin: 50px auto;
+background: #f37d7d;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+text-align: center;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+label {
+display: block;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+width: 75%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background: #007bff;
+color: #fff;
+cursor: pointer;
+}
+</style>
+<body>
+    <h2>Formulario de Cita para Donación de Sangre</h2>
+    <form action="index.html" method="post">
+        <ul>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="dui">DUI:</label>
+                <input type="text" id="dui" name="dui" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Selecciona el sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ocupacion">Ocupación (opcional):</label>
+                <input type="text" id="ocupacion" name="ocupacion">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_sangre">Tipo de Sangre:</label>
+                <select id="tipo_sangre" name="tipo_sangre" required>
+                    <option value="">Selecciona el tipo de sangre</option>
+                    <option value="O-">O-</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="A+">A+</option>
+                    <option value="B-">B-</option>
+                    <option value="B+">B+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="AB+">AB+</option>
+                </select>
+            </div>
+            <div class="button">
+                <button type="submit"
+                id="btn_registro" name="btn_registro">Enviar</button>
+
+            </div>
+        </ul>
+     </form>
+</body>
+</html>
+
+
+
